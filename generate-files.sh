@@ -5,6 +5,10 @@ x=0
 while [ $i -le $COUNT ]
 do
    # echo "Number: $x"
+   if [ $i -eq "0" ] ; then
+           x=$(( $x + 1))
+           mkdir folder-$x
+   fi
    if [ $i -eq "10000" ] ; then
 	   x=$(( $x + 1))
 	   mkdir folder-$x
